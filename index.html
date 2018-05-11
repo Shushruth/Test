@@ -38,9 +38,13 @@
                 <th>Last-name</th>
                 <th>HOME</th>
         </tr>
-        <script>
+</table>
+</div>
+</div>
+</body>
+<script>
             $(document).ready(function(){
-                $.getJSON("data.json",function(data){
+                $.getJSON("https://github.com/Shushruth/test/blob/master/data.json",function(data){
                     var bio_data='';
                     $.each(data,function(key,value){
                         bio_data +='<tr>';
@@ -54,10 +58,6 @@
                    
                 });
                 });
-            </script>
-</table>
-</div>
-</div>
-</body>
+</script>
 </html>
 
